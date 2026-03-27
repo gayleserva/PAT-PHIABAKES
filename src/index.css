@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-cursive: "Dancing Script", cursive;
+
+  --color-candy-pink: #FFB6C1;
+  --color-hotpink: #FF69B4;
+  --color-candy-lavender: #F3E5F5;
+  --color-candy-peach: #FFE4E1;
+  --color-candy-blue: #E0F7FA;
+  --color-luxe-gold: #FFD700;
+  --color-luxe-cream: #FFF9F0;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FFF9F0] text-slate-900 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-pink-100;
+  }
+  
+  .candy-gradient {
+    background: linear-gradient(135deg, #FFB6C1 0%, #F3E5F5 100%);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-hotpink to-purple-500;
+  }
+
+  .cursive {
+    @apply font-cursive;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=Dancing+Script:wght@600;700&display=swap');
