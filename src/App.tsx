@@ -314,9 +314,6 @@ const Bestsellers = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-1 rounded-full font-bold text-pink-600 shadow-sm">
-                  {treat.price}
-                </div>
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-display font-bold mb-2 group-hover:text-pink-500 transition-colors">
@@ -470,8 +467,6 @@ const Gallery = () => {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
-                <p className="text-white font-display font-bold text-xl mb-1">{treat.name}</p>
-                <p className="text-white/80 text-sm">#{treat.category}</p>
               </div>
             </motion.div>
           ))}
